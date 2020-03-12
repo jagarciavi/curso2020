@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="helpdesk_menu"
+        name="Helpdesk"
+        sequence="20"/>
+    <menuitem id="helpdesk_ticket_main_menu" 
+        name="Tickets" 
+        parent="helpdesk_curso.helpdesk_menu"
+        sequence="10"/>
+    <menuitem id="helpdesk_ticket_config_menu"
+        name="Configuration"
+        parent="helpdesk_curso.helpdesk_menu"
+        sequence="20"/>
+     
+</odoo>

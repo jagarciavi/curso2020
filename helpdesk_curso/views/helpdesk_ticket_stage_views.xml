@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_helpdesk_ticket_stage_tree" model="ir.ui.view">
+        <field name="name">view.helpdesk_ticket_stage.tree</field>
+        <field name="model">helpdesk.ticket.stage</field>
+        <field name="arch" type="xml">
+            <tree string="Ticket Stage">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="helpdesk_ticket_stage_action" model="ir.actions.act_window">
+        <field name="name">Ticket Stages</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">helpdesk.ticket.stage</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="helpdesk_ticket_stage_menu" 
+        parent="helpdesk_curso.helpdesk_ticket_config_menu" 
+        action="helpdesk_ticket_stage_action" 
+        sequence="20"/>
+</odoo>
