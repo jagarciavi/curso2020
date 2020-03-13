@@ -15,6 +15,7 @@
                             <field name="date_deadline"/>
                             <field name="team_id"/>
                             <field name="user_ids" widget="many2many_tags"/>
+                            <field name="tickets_qty"/>
                             <field name="responsable_id"/>
                             <button name="set_responsable" 
                             type="object"
@@ -28,6 +29,11 @@
                         </group>
                     </group>
                 </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="activity_ids" widget="mail_activity"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
             </form>
         </field>
     </record>
