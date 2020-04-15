@@ -18,7 +18,7 @@
     "depends": ["helpdesk_mgmt","project"],
     "data": [
         "views/ticket_views.xml",
-        #"views/project_views.xml",
+        "views/project_views.xml",
     ],
     "demo": [],
     "development_status": "Alpha",
